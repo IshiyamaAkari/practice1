@@ -26,6 +26,7 @@ ul {
 li {
   text-decoration: none;
   list-style: none;
+  color: $cBlack;
 }
 #cursor {
   position: fixed;
@@ -167,11 +168,17 @@ li {
   &__logo{
     width:10%;
     transition: 0.5s;
-    & a img{
+    & a{
+      display: block;
       width:100%;
-    }
-    &:hover{
-      opacity: 0.8;
+      margin: 0;
+      & img{
+        width:100%;
+        vertical-align: bottom
+      }
+      &:hover{
+        opacity: 0.8;
+      }
     }
   }
   &__nav ul{
@@ -188,7 +195,7 @@ li {
       background:linear-gradient(currentColor 0 0) bottom 0 left 0 /var(--d, 0) 1.3px no-repeat,
       linear-gradient(currentColor 0 0) bottom 0 right 0 /var(--d, 0) 1.3px no-repeat;
       &:last-child {
-          margin-right: 30px;
+        margin-right: 30px;
       }
       &:hover{
         --d: 100%;
@@ -198,7 +205,6 @@ li {
   }
 }
 header.scroll-nav .header-wrap{
-  
   background: $cWhite;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
@@ -206,7 +212,7 @@ header.scroll-nav ul li a {
   color: $cBlack;
 }
 header.scroll-nav .header-wrap__logo {
-  width:6%;
+  width:7%;
 }
 .footer-wrap{
   padding:5% 5%;
@@ -456,14 +462,14 @@ header.scroll-nav .header-wrap__logo {
       }
     }
   }
-
   header .drawer {
+    height:10vh;
     visibility: visible;
     width: 25px;
     position: fixed;
-    top: 30px;
+    top: 3vw;
     right: 30px;
-    border-top: solid 3px $cWhite;
+    border-top: solid 2.8px $cWhite;
     cursor: pointer;
     z-index: 100;
     transition: all 0.5s;
@@ -498,9 +504,23 @@ header.scroll-nav .header-wrap__logo {
   }
   .header-wrap__logo {
     width: 15%;
+    
   }
   header.scroll-nav .header-wrap__logo {
-    width: 8%;
+    width: 10%;
+    height: 10vw;
+    & a{
+      height:100%;
+      & img{
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  header.scroll-nav .header-wrap {
+    background: $cWhite;
+    height:10vw;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   }
   body{
     font-size:15px;
@@ -592,12 +612,6 @@ header.scroll-nav .header-wrap__logo {
     width: 27vw;
     font-size: 0.75rem;
     margin: 0 5px 0 5px;
-  }
-  header .drawer {
-    top:20px;
-  }
-  header.scroll-nav .header-wrap__logo {
-    width: 12%;
   }
   .btn-more_w,  .btn-more_g{
     font-size: 0.8rem;

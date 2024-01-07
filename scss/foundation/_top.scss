@@ -156,7 +156,6 @@
   content: "＜";
   color: $cWhite;
 }
-
 .next-link:hover::after {
   content: "＞";
   color: $cWhite;
@@ -606,7 +605,9 @@
     }
   }
   .pickup-wrap{
-    
+    &__con ul li:nth-of-type(2) {
+      display: none;
+    }
     & .btn-more_w{
     width:40vw;
     }

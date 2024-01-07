@@ -1,6 +1,6 @@
 @use "../global" as *;
 .c-top {
-  background-image: url(../../img/hekikai-36.jpg);
+  background-image: url("/img/hekikai-36.jpg") no-repeat center;
 }
 .greeting-wrap{
   width: 80%;
@@ -106,6 +106,9 @@
   }
 }
 @include mq(tb) {
+  .c-top {
+    background-image: url("/img/hekikai-36_2.jpg") no-repeat center;
+  }
   .greeting-wrap {
     width: 80%;
     display: block;

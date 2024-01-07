@@ -1,7 +1,7 @@
 @use "../global" as *;
 
 .n-top{
-  background-image: url(../../img/hekikai-38.jpg);
+  background-image: url("/img/hekikai-38.jpg") no-repeat center;
 }
 .info-wrap{
   margin-bottom: 0%;
@@ -48,6 +48,9 @@
   }
 }
 @include mq(tb) {
+  .n-top {
+    background-image: url("/img/hekikai-38_2.jpg") no-repeat center;
+  }
   .info-wrap__con__list li {
     flex-wrap: wrap;
     & .txt{
