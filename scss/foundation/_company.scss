@@ -1,0 +1,168 @@
+@use "../global" as *;
+.c-top {
+  background-image: url(../../img/hekikai-36.jpg);
+}
+.greeting-wrap{
+  width: 80%;
+  @include flex(space-between);
+  align-items: flex-end;
+  &__con{
+    & h2{
+      font-size: 1.3rem;
+      margin:8% 0;
+      font-weight: 500;
+      letter-spacing: 3.5px;
+      & span{
+        color:$cGreen;
+      }
+    }
+    & p{
+      line-height: 40px;
+      letter-spacing: 0.85px;
+    }
+  }
+  & img{
+    width:40%;
+    height:45vh;
+    object-fit: cover;
+  }
+}
+.profile-wrap{
+  width:80%;
+  @include flex(space-between);
+  align-items: flex-start;
+  &__con{
+    width:55%;
+    margin-top:3%;
+    border-top:solid 1px $cBlack_l;
+    &__list__item{
+      @include flex(flex-start);
+      margin-bottom:3%;
+      padding-bottom:3%;
+      border-bottom:solid 1px $cBlack_l;
+      &:nth-of-type(1){
+        padding-top:3%;
+      }
+      &__ttl{
+        width:30%;
+      }
+    }
+  }
+}
+.history-wrap {
+  width:80%;
+  margin-bottom: 5%;
+  @include flex(space-between);
+  align-items: flex-start;
+  &__con {
+    width: 55%;
+    margin-top: 3%;
+    border-top: solid 1px $cBlack_l;
+    &__list__item {
+      @include flex(flex-start);
+      margin-bottom: 3%;
+      padding-bottom: 3%;
+      border-bottom: solid 1px $cBlack_l;
+      &:nth-of-type(1) {
+        padding-top: 3%;
+      }
+      &__ttl {
+        width: 30%;
+      }
+      &__txt{
+        width: 70%;
+      }
+    }
+  }
+}
+@include mq(pc) {
+  .greeting-wrap{
+    width:85%;
+    & img {
+      width: 40%;
+      height: 35vh;
+    }
+    &__con p{
+      font-size: 0.95rem;
+    }
+  }
+  .profile-wrap{
+    width: 85%;
+    &__con {
+      width:65%;
+      &__list__item__ttl,&__list__item__txt{
+        font-size: 0.95rem;
+      }
+    }
+  }
+  .history-wrap{
+    width: 85%;
+    &__con {
+      width: 65%;
+      &__list__item__ttl,&__list__item__txt {
+        font-size: 0.95rem;
+      }
+    }
+  }
+}
+@include mq(tb) {
+  .greeting-wrap {
+    width: 80%;
+    display: block;
+    &__con{
+      & h2{
+      margin: 5% 0;
+      }
+      & p br{
+        display: none;
+      }
+      & p{
+        line-height: 35px;
+      }
+    }
+    & img {
+      display: block;
+      width: 80%;
+      height:auto;
+      margin:3% auto;
+    }
+  }
+  .profile-wrap {
+    width: 80%;
+    display: block;
+    &__con{
+      width:100%;
+      margin-top:5%;
+    }
+  }
+  .history-wrap {
+    width: 80%;
+    display: block;
+    &__con {
+      width: 100%;
+      margin-top: 5%;
+    }
+  }
+}
+@include mq(sp) {
+  .greeting-wrap__con{
+    & h2{
+    font-size: 1.1rem;
+    letter-spacing: 2.8px;
+    }
+    & p{
+      line-height: 28px;
+      font-size: 0.9rem;
+    }
+  }
+  .profile-wrap__con{
+    &__list__item__ttl,&__list__item__txt {
+    font-size: 0.9rem;
+    }
+  }
+  .history-wrap__con{
+    &__list__item__ttl,  &__list__item__txt {
+    font-size: 0.9rem;
+    }
+  }
+}

@@ -1,0 +1,73 @@
+@use "../global" as *;
+
+.n-top{
+  background-image: url(../../img/hekikai-38.jpg);
+}
+.info-wrap{
+  margin-bottom: 0%;
+  &__con{
+    width:80%;
+    margin:0 auto;
+    &__list{
+      margin-top: 10%;
+      & li{
+        @include flex(flex-start);
+        margin-bottom: 3%;
+        padding-bottom: 3%;
+        border-bottom: solid 1px $cBlack_l;
+        & .cate{
+          background-color: $cGreen;
+          color:$cWhite;
+          margin-right: 5%;
+          width:15%;
+        }
+        & .date{
+          width:23%;
+          display: block;
+          margin-right:5%;
+          letter-spacing: 1.6px;
+        }
+        & .txt{
+          letter-spacing: 1.6px;
+          width:60%;
+          display: block;
+          & a:hover{
+          text-decoration: underline;
+          text-decoration-color: $cBlack;
+          }
+        }
+      }
+    }
+  }
+}
+@include mq(pc) {
+  .info-wrap__con__list li {
+    & .date {
+      width: 28%;
+    }
+  }
+}
+@include mq(tb) {
+  .info-wrap__con__list li {
+    flex-wrap: wrap;
+    & .txt{
+      width:100%;
+      font-size: 0.95rem;
+    }
+    & .cate{
+      width:25%;
+
+    }
+    & .date{
+      width:50%;
+      font-size: 0.9rem;
+    }
+  }
+}
+@include mq(sp) {
+  .info-wrap__con{
+    width:95%;
+  }
+}
+
+

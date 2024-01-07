@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>【公式】株式会社碧海建設</title>
+  <meta name="description" content="株式会社碧海建設-海洋の未来をつくる-" />
+  <meta name="keywords" content="Japan,marine,marine construction">
+  <meta property="og:url" content="https://hekikai.com">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="【公式】株式会社碧海建設">
+  <meta property="og:description" content="株式会社碧海建設-海洋の未来をつくる-">
+  <meta property="og:site_name" content="img/logo.png">
+  <meta property="og:image" content="https://hekikai.com">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Monda:wght@400;700&family=Noto+Sans+JP:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.5.4/vegas.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+<body>
+  <header id="header" class="header">
+    <div class="header-wrap">
+      <div class="header-wrap__logo">
+        <a href="../index.html"><img src="../img/logo.png" alt="ロゴ画像"></a>
+      </div>
+      <nav class="header-wrap__nav">
+        <ul>
+          <li>
+            <a href="service.html">事業案内</a>
+          </li>
+          <li>
+            <a href="company.html">会社概要</a>
+          </li>
+          <li>
+            <a href="pickup.html">ピックアップ</a>
+          </li>
+          <li>
+            <a href="contact.html">お問い合わせ</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="drawer"></div>
+  </header>
+  <main>
+    <div id="cursor"></div>
+    <section id="top" class="con-top">
+      <h1>お問い合わせ<span>CONTACT</span></h1>
+    </section>
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="breadcrumbs-wrap __inner-b">
+        <a href="../index.html">ホーム</a>/
+        <a href="contact.html">お問い合わせ</a>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="contact-wrap __inner">
+        <div class="contact-wrap__form">
+          <form action="../mail.php" id="form" method="POST">
+            <div class="contact-wrap__form__box">
+              <label for="name" class="contact-wrap__form__box__ttl">お問い合わせ種別</label>
+              <select name="お問い合わせ項目" required="required" class="contact-wrap__form__box__select">
+                <optgroup value>
+                  <option value="お問い合わせ" class="contact-wrap__form__box__select__with">種別を選択してください</option>
+                  <option value="資料請求" class="contact-wrap__form__box__select__with">お見積り</option>
+                  <option value="採用問い合わせ" class="contact-wrap__form__box__select__with">採用問い合わせ</option>
+                </optgroup>
+              </select>
+            </div>
+            <div class="contact-wrap__form__box">
+              <label for="company" class="contact-wrap__form__box__ttl">貴社名</label>
+              <input type="text" class="contact-wrap__form__box__input" company="貴社名" required="required" placeholder="例：XXXX株式会社">
+            </div>
+            <div class="contact-wrap__form__box">
+              <label for="department" class="contact-wrap__form__box__ttl">部署名</label>
+              <input type="text" class="contact-wrap__form__box__input" company="部署名" required="required" placeholder="例：XXXX部">
+            </div>
+            <div class="contact-wrap__form__box">
+              <label for="name" class="contact-wrap__form__box__ttl">お名前</label>
+              <input type="text" class="contact-wrap__form__box__input" name="お名前" required="required"
+                placeholder="例：山田太郎">
+            </div>
+            <div class="contact-wrap__form__box">
+              <label for="email" class="contact-wrap__form__box__ttl">メールアドレス</label>
+              <input type="email" class="contact-wrap__form__box__input" name="メールアドレス" required="required"
+                placeholder="例：example@example.com">
+            </div>
+            <div class="contact-wrap__form__box">
+              <label for="email" class="contact-wrap__form__box__ttl">電話番号</label>
+              <input type="tel" class="contact-wrap__form__box__input" name="電話番号" required="required"
+                placeholder="例：03-1234-5678">
+            </div>
+            <div class="contact-wrap__form__box">
+              <label for="message" class="contact-wrap__form__box__ttl">お問い合わせ内容</label>
+              <textarea name="お問い合わせ内容" class="contact-wrap__form__box__area" id="message" required="required"
+                placeholder="お問い合わせ内容をご入力下さい"></textarea>
+            </div>
+            <button type="submit" class="btn">送信する</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="footer" class="footer">
+    <div class="footer-wrap">
+      <div class="footer-wrap__left">
+        <a href="../index.html"><img src="../img/logo.png"></a>
+        <small>©HEKIKAI INC.</small>
+      </div>
+      <div class="footer-wrap__right">
+        <nav class="footer-wrap__right__nav">
+          <ul>
+            <li>
+              <a href="service.html">事業案内</a>
+            </li>
+            <li>
+              <a href="company.html">会社概要</a>
+            </li>
+            <li>
+              <a href="pickup.html">ピックアップ</a>
+            </li>
+            <li>
+              <a href="news.html">お知らせ</a>
+            </li>
+            <li>
+              <a href="contact.html">お問い合わせ</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.5.4/vegas.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js"></script>
+  <script type="text/javascript" src="../main.js"></script>
+</body>
+
+</html>

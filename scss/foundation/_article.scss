@@ -1,0 +1,51 @@
+@use "../global" as *;
+
+.article-wrap{
+  width:60%;
+  & .cate{
+    background-color: $cGreen;
+    color:$cWhite;
+  }
+  & .ttl{
+    margin: 5% 0 1%;
+    font-size: 1.3rem;
+    letter-spacing: 1.6px;
+  }
+  & .date{
+    margin-bottom: 5%;
+    font-size: 0.9rem;
+  }
+  & .txt {
+    line-height: 2;
+  }
+  & .btn-more_g{
+    width:18vw;
+    margin:10% auto 5%;
+    &::after{
+      z-index: -2;
+    }
+  }
+}
+@include mq(pc) {
+  .article-wrap {
+    & .btn-more_g {
+      width: 22vw;
+    }
+  }
+}
+@include mq(tb) {
+  .article-wrap {
+    width:70%;
+    & .btn-more_g {
+      width: 30vw;
+    }
+  }
+}
+@include mq(sp) {
+  .article-wrap {
+    width: 80%;
+    & .btn-more_g {
+      width: 40vw;
+    }
+  }
+}
