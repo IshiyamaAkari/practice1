@@ -1,7 +1,7 @@
 @use "../global" as *;
 
 .con-top {
-  background-image: url("/img/hekikai-39.jpg") no-repeat center;
+  background-image: url("../img/hekikai-39.jpg");
 }
 .contact-wrap{
   margin-bottom: 0;
@@ -100,7 +100,7 @@
 }
 @include mq(tb) {
   .con-top {
-    background-image: url("/img/hekikai-39_2.jpg") no-repeat center;
+    background-image: url("../img/hekikai-39_2.jpg");
   }
   .contact-wrap__form{
     width:70%;

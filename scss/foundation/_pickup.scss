@@ -1,7 +1,7 @@
 @use "../global" as *;
 
 .p-top {
-  background-image: url("/img/hekikai-37.jpg") no-repeat center;
+  background-image:url("../img/hekikai-37.jpg"); 
 }
 #p-breadcrumbs{
   & .breadcrumbs-wrap{
@@ -92,7 +92,7 @@
 }
 @include mq(tb) {
   .p-top {
-    background-image: url("/img/hekikai-37_2.jpg") no-repeat center;
+    background-image: url("../img/hekikai-37_2.jpg");
   }
   .pickup-wrap {
     &__con ul li {

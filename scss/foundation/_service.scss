@@ -1,7 +1,7 @@
 @use "../global" as *;
 
 .s-top{
-  background: url("/img/hekikai-35.jpg") no-repeat center;
+  background-image: url("../img/hekikai-35.jpg") ;
 }
 .business-wrap{
   margin-bottom: 0%;
@@ -108,7 +108,7 @@
 }
 @include mq(tb) {
   .s-top {
-    background: url("/img/hekikai-35_2.jpg") no-repeat center;
+    background-image: url("../img/hekikai-35_2.jpg");
   }
   .business-wrap__block {
     &__main{
