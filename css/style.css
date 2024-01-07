@@ -198,6 +198,7 @@ ul {
 li {
   text-decoration: none;
   list-style: none;
+  color: #1F2C43;
 }
 
 #cursor {
@@ -1450,7 +1451,7 @@ header.scroll-nav .header-wrap__logo {
   }
 }
 .s-top {
-  background: url("/img/hekikai-35.jpg") no-repeat center;
+  background-image: url("../img/hekikai-35.jpg");
 }
 
 .business-wrap {
@@ -1559,7 +1560,7 @@ header.scroll-nav .header-wrap__logo {
 }
 @media screen and (max-width: 768px) {
   .s-top {
-    background: url("/img/hekikai-35_2.jpg") no-repeat center;
+    background-image: url("../img/hekikai-35_2.jpg");
   }
   .business-wrap__block__main {
     display: flex;
@@ -1613,7 +1614,7 @@ header.scroll-nav .header-wrap__logo {
   }
 }
 .c-top {
-  background-image: url("/img/hekikai-36.jpg");
+  background-image: url("../img/hekikai-36.jpg");
 }
 
 .greeting-wrap {
@@ -1732,7 +1733,7 @@ header.scroll-nav .header-wrap__logo {
 }
 @media screen and (max-width: 768px) {
   .c-top {
-    background-image: url("/img/hekikai-36_2.jpg");
+    background-image: url("../img/hekikai-36_2.jpg");
   }
   .greeting-wrap {
     width: 80%;
@@ -1787,7 +1788,7 @@ header.scroll-nav .header-wrap__logo {
   }
 }
 .p-top {
-  background-image: url("/img/hekikai-37.jpg");
+  background-image: url("../img/hekikai-37.jpg");
 }
 
 #p-breadcrumbs .breadcrumbs-wrap {
@@ -1883,7 +1884,7 @@ header.scroll-nav .header-wrap__logo {
 }
 @media screen and (max-width: 768px) {
   .p-top {
-    background-image: url("/img/hekikai-37_2.jpg");
+    background-image: url("../img/hekikai-37_2.jpg");
   }
   .pickup-wrap__con ul li {
     width: 44%;
@@ -1896,7 +1897,7 @@ header.scroll-nav .header-wrap__logo {
   }
 }
 .n-top {
-  background-image: url("/img/hekikai-38.jpg");
+  background-image: url("../img/hekikai-38.jpg");
 }
 
 .info-wrap {
@@ -1946,7 +1947,7 @@ header.scroll-nav .header-wrap__logo {
 }
 @media screen and (max-width: 768px) {
   .n-top {
-    background-image: url("/img/hekikai-38_2.jpg");
+    background-image: url("../img/hekikai-38_2.jpg");
   }
   .info-wrap__con__list li {
     flex-wrap: wrap;
@@ -1969,7 +1970,7 @@ header.scroll-nav .header-wrap__logo {
   }
 }
 .con-top {
-  background-image: url("/img/hekikai-39.jpg");
+  background-image: url("../img/hekikai-39.jpg");
 }
 
 .contact-wrap {
@@ -2068,7 +2069,7 @@ header.scroll-nav .header-wrap__logo {
 }
 @media screen and (max-width: 768px) {
   .con-top {
-    background-image: url("/img/hekikai-39_2.jpg");
+    background-image: url("../img/hekikai-39_2.jpg");
   }
   .contact-wrap__form {
     width: 70%;
